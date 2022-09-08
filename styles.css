@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --light-blue: #2c7dfa;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: var(--white);
+  padding: 18px 16px;
+  width: 320px;
+  height: 500px;
+  border-radius: 16px;
+  box-shadow: 0 10px 50px -25px var(--grayish-blue);
+}
+
+.qr img {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content {
+  color: var(--dark-blue);
+  text-align: center;
+  padding-inline: 16px;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 22px;
+  margin-block: 19px 15px;
+}
+
+.content p {
+  color: var(--grayish-blue);
+}
+
+/* footer */
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+.attribution a:hover {
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
